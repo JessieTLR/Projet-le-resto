@@ -1,0 +1,48 @@
+header {
+    background:url(./Style/components/Img/bg-slider-06.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    
+    .header-content{
+        height: 88vh;
+        color:$colorwhite;
+        text-align: center;
+        margin-top: 10%;
+
+        h2{
+            font-family:"Allura", sans-serif;
+            color:$color1;
+            font-size: 4rem;
+            font-weight: lighter;
+            height: 60px;
+        }
+
+        h1{
+            font-family: "Roboto", sans-serif;
+            font-size: 4.5rem;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            height: 70px;
+        }
+        
+        img {
+            width: 35px;
+            height: 35px;
+            margin-top: 55px;
+            margin-bottom: 55px;
+        }
+
+        p{
+            font-family:"Roboto", sans-serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
+
+    }
+    
+
+    
+}

@@ -1,0 +1,78 @@
+main {
+    .store {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        max-height:60vh;
+        background: $colorwhite;
+
+        .store-left {
+            background: $colorwhite;
+            text-align: center;
+            border: 1px dashed $color1;
+            margin: 15px;
+
+            h3{
+                margin-top: 35px;
+                height: 40px;
+            }
+
+            h4 {
+                color: $colorblack;
+                font-family: "Roboto",sans-serif;
+            }
+
+            img {
+                margin-top: 30px;
+                height: 35px;
+                width: 35px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-family: "Roboto", sans-serif;
+                color: $colorblack;
+                font-size: 1.3rem;
+                letter-spacing: 0.2px;
+                font-weight:300;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+
+            .photo {
+                    height: 100px;
+                img {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 150px;
+                    margin: 0 auto;
+                }
+            }
+
+            h5 {
+                font-family: "Roboto", sans-serif;
+                font-size: 1.3rem;
+                color: $colorblack;
+                font-weight: 500;
+                letter-spacing: 0.2px;
+            }
+
+            h6 {
+                font-family: "Roboto", sans-serif;
+                font-size: 1rem;
+                color: $color2;
+                text-transform: uppercase;
+                font-weight: 450;
+            }
+
+            }
+
+        }
+
+        .store-right {
+            background: url(./Style/components/Img/store-01.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+    }
+
