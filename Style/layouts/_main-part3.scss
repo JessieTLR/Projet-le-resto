@@ -1,0 +1,19 @@
+.reservation-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 33% 67%;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    .openner {
+        background: black;
+        text-align: center;
+        padding: 20px;
+        
+        .border {
+            border: 1px dashed $color1;
+        }
+            
+    }
+        
+}
