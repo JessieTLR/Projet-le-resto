@@ -285,7 +285,7 @@ main .store-right {
 }
 
 .reservation-container {
-  width: 70%;
+  width: 1340px;
   display: grid;
   grid-template-columns: 30% 70%;
   margin: 0 auto;
@@ -439,7 +439,10 @@ main .store-right {
 .reservation-container .informations form .submit #submit {
   background: rgb(39, 38, 38);
   color: rgb(240, 240, 240);
-  padding: 10px 30px 10px 30px;
+  padding: 20px 60px 20px 60px;
   border: none;
   border-radius: 150px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.8px;
 }/*# sourceMappingURL=style.css.map */
