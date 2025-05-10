@@ -1,19 +1,188 @@
 .reservation-container {
-    width: 60%;
+    width: 70%;
     display: grid;
-    grid-template-columns: 33% 67%;
+    grid-template-columns: 30% 70%;
     margin: 0 auto;
     margin-top: 60px;
 
     .openner {
         background: black;
         text-align: center;
-        padding: 20px;
+        padding: 30px;
         
         .border {
-            border: 1px dashed $color1;
-        }
+            border: 1px dashed $colorwhite;
+            padding: 20px;
+            min-width: 300px;
+
+            h3{
+                height: 40px;
+                font-size: 2.5rem;
+            }
+
+            img {
+                margin: 40px 0 40px 0;
+                width: 40px;
+                height: 40px;
+            }
             
+            h5{
+                font-family: "Roboto", sans-serif;
+                color: $color1;
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                font-weight: 450;
+                letter-spacing: 0.9px;
+            }
+
+            p {
+                font-weight: "Roboto", sans-serif;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                font-weight: 350;
+                letter-spacing: 0.4px;
+            }
+
+            h6{
+                font-family: "Roboto", sans-serif;
+                color: $color1;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: 450;
+                letter-spacing: 1.2px;
+                margin-bottom: 20px;
+            }
+        }     
+    }
+
+    .informations {
+        background: $colorwhite;
+        text-align: center;
+
+        h3 {
+            height: 45px;
+            font-size: 3rem;
+            margin-top: 80px;
+        }
+
+        h4 {
+            color: $colorblack;
+            text-transform: uppercase;
+            font-size: 2.4rem;
+        }
+
+        img{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        form {
+            max-width: 750px; 
+            margin: 0 auto;
+
+            .formulary {
+                .top-formulary {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    #number {
+                        width: 220px;
+                        height: 45px;
+                        background: none;
+                        border: 0px;
+                        border-bottom: 1px solid $color2;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 1rem;
+                        letter-spacing: 0.3px;
+                        margin-bottom: 20px;
+                    }
+
+                    #date {
+                        width: 220px;
+                        height: 45px;
+                        background: none;
+                        border: 0px;
+                        border-bottom: 1px solid $color2;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 1rem;
+                        letter-spacing: 0.3px;
+                        margin-bottom: 20px;
+                    }
+
+                    #time {
+                        width: 220px;
+                        height: 45px;
+                        background: none;
+                        border: 0px;
+                        border-bottom: 1px solid $color2;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 1rem;
+                        letter-spacing: 0.3px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .bottom-formulary {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-bottom: 30px;
+
+                    #name {
+                        width: 220px;
+                        height: 45px;
+                        background: none;
+                        border: 0px;
+                        border-bottom: 1px solid $color2;
+                        font-family: "Roboto", sans-serif;
+                        color: $color2;
+                        font-size: 1rem;
+                        letter-spacing: 0.3px;
+                        margin-bottom: 20px;
+                    }
+
+                    #phone {
+                        width: 220px;
+                        height: 45px;
+                        background: none;
+                        border: 0px;
+                        border-bottom: 1px solid $color2;
+                        font-family: "Roboto", sans-serif;
+                        color: $color2;
+                        font-size: 1rem;
+                        letter-spacing: 0.3px;
+                        margin-bottom: 20px;
+                    }
+
+                    #email {
+                        width: 220px;
+                        height: 45px;
+                        background: none;
+                        border: 0px;
+                        border-bottom: 1px solid $color2;
+                        font-family: "Roboto", sans-serif;
+                        color: $color2;
+                        font-size: 1rem;
+                        letter-spacing: 0.3px;
+                        margin-bottom: 20px;
+                    }
+                }   
+            }
+
+            .submit {
+                    #submit{
+                    background: $colorblack;
+                    color: $colorwhite;
+                    padding: 10px 30px 10px 30px;
+                    border: none;
+                    border-radius: 150px;
+                }
+            }
+
+        }
+
+    
     }
         
 }

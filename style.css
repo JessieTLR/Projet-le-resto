@@ -24,7 +24,7 @@ body li {
 }
 body h3 {
   font-family: "Allura", sans-serif;
-  color: rgb(158, 105, 35);
+  color: rgb(172, 113, 37);
   font-size: 2.5rem;
   font-weight: lighter;
 }
@@ -69,7 +69,7 @@ nav ul li {
   font-weight: lighter;
 }
 nav ul li:hover {
-  color: rgb(158, 105, 35);
+  color: rgb(172, 113, 37);
   scale: 1.2;
   transition: 0.6s;
 }
@@ -78,7 +78,7 @@ nav .nav-icones i {
   font-size: 0.8rem;
 }
 nav .nav-icones i:hover {
-  color: rgb(158, 105, 35);
+  color: rgb(172, 113, 37);
   scale: 1.2;
   transition: 0.6s;
 }
@@ -98,7 +98,7 @@ header .header-content {
 }
 header .header-content h2 {
   font-family: "Allura", sans-serif;
-  color: rgb(158, 105, 35);
+  color: rgb(172, 113, 37);
   font-size: 4rem;
   font-weight: lighter;
   height: 60px;
@@ -126,13 +126,14 @@ header .header-content p {
 main .store {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-height: 60vh;
+  max-height: 70vh;
+  min-height: 530px;
   background: rgb(240, 240, 240);
 }
 main .store .store-left {
   background: rgb(240, 240, 240);
   text-align: center;
-  border: 1px dashed rgb(158, 105, 35);
+  border: 1px dashed rgb(172, 113, 37);
   margin: 15px;
 }
 main .store .store-left h3 {
@@ -233,12 +234,12 @@ main .store-right {
 .menu-container ul li:hover {
   scale: 1.2;
   transition: 0.6s;
-  border-bottom: 1px solid rgb(158, 105, 35);
+  border-bottom: 1px solid rgb(172, 113, 37);
 }
 .menu-container .menu {
   background-color: rgb(240, 240, 240);
   color: rgb(39, 38, 38);
-  border-top: 5px solid rgb(158, 105, 35);
+  border-top: 5px solid rgb(172, 113, 37);
   max-width: 950px;
   min-width: 895px;
   margin: 0 auto;
@@ -256,7 +257,7 @@ main .store-right {
   grid-template-columns: 28% 60% 12%;
   margin: 20px;
   padding: 20px 0 40px 0;
-  border-bottom: 1px dashed rgb(158, 105, 35);
+  border-bottom: 1px dashed rgb(172, 113, 37);
 }
 .menu-container .menu .plate-container .img-plate img {
   margin: 0;
@@ -277,24 +278,168 @@ main .store-right {
 }
 .menu-container .menu .plate-container .plate-price p {
   font-family: "Roboto", sans-serif;
-  color: rgb(158, 105, 35);
+  color: rgb(172, 113, 37);
   font-size: 1.5rem;
   margin-top: 30px;
   text-align: right;
 }
 
 .reservation-container {
-  width: 60%;
+  width: 70%;
   display: grid;
-  grid-template-columns: 33% 67%;
+  grid-template-columns: 30% 70%;
   margin: 0 auto;
   margin-top: 60px;
 }
 .reservation-container .openner {
   background: black;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 .reservation-container .openner .border {
-  border: 1px dashed rgb(158, 105, 35);
+  border: 1px dashed rgb(240, 240, 240);
+  padding: 20px;
+  min-width: 300px;
+}
+.reservation-container .openner .border h3 {
+  height: 40px;
+  font-size: 2.5rem;
+}
+.reservation-container .openner .border img {
+  margin: 40px 0 40px 0;
+  width: 40px;
+  height: 40px;
+}
+.reservation-container .openner .border h5 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(172, 113, 37);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 450;
+  letter-spacing: 0.9px;
+}
+.reservation-container .openner .border p {
+  font-weight: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 350;
+  letter-spacing: 0.4px;
+}
+.reservation-container .openner .border h6 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(172, 113, 37);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 450;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+}
+.reservation-container .informations {
+  background: rgb(240, 240, 240);
+  text-align: center;
+}
+.reservation-container .informations h3 {
+  height: 45px;
+  font-size: 3rem;
+  margin-top: 80px;
+}
+.reservation-container .informations h4 {
+  color: rgb(39, 38, 38);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+.reservation-container .informations img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.reservation-container .informations form {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.reservation-container .informations form .formulary .top-formulary {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.reservation-container .informations form .formulary .top-formulary #number {
+  width: 220px;
+  height: 45px;
+  background: none;
+  border: 0px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+.reservation-container .informations form .formulary .top-formulary #date {
+  width: 220px;
+  height: 45px;
+  background: none;
+  border: 0px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+.reservation-container .informations form .formulary .top-formulary #time {
+  width: 220px;
+  height: 45px;
+  background: none;
+  border: 0px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+.reservation-container .informations form .formulary .bottom-formulary {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.reservation-container .informations form .formulary .bottom-formulary #name {
+  width: 220px;
+  height: 45px;
+  background: none;
+  border: 0px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  font-family: "Roboto", sans-serif;
+  color: rgb(180, 180, 180);
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+.reservation-container .informations form .formulary .bottom-formulary #phone {
+  width: 220px;
+  height: 45px;
+  background: none;
+  border: 0px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  font-family: "Roboto", sans-serif;
+  color: rgb(180, 180, 180);
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+.reservation-container .informations form .formulary .bottom-formulary #email {
+  width: 220px;
+  height: 45px;
+  background: none;
+  border: 0px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  font-family: "Roboto", sans-serif;
+  color: rgb(180, 180, 180);
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+.reservation-container .informations form .submit #submit {
+  background: rgb(39, 38, 38);
+  color: rgb(240, 240, 240);
+  padding: 10px 30px 10px 30px;
+  border: none;
+  border-radius: 150px;
 }/*# sourceMappingURL=style.css.map */

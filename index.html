@@ -219,43 +219,51 @@
                 <p> 7AM - 11AM (Breakfast) <br> 11AM - 10PM (Lunch/Dinner)</p>
                 <h5>Saturday - Sunday</h5>
                 <p> 8AM - 1PM (Brunch) <br> 1PM - 10PM (Lunch/Dinner)</p>
-                <h5>+33 5 79 25 52</h5>
+                <h6>+33 5 79 25 52</h6>
             </div>
         </div>
 
         <div class="informations">
             <h3>Reservation</h3>
             <h4>Online Booking</h4>
+            <img src="../Maquette Font Img/img/ic-plate.png" alt="pictogramme couverts">
             <form action="#">
-                <label for="number"></label> 
-                <select name="people" id="number">
-                    <option valeur="People">People</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                </select>
+                <div class="formulary">
+                    <div class="top-formulary">
+                        <label for="number"></label> 
+                        <select name="people" id="number">
+                            <option valeur="People">People</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
 
-                <label for="date"></label>
-                <input type="date" id="date">
+                        <label for="date"></label>
+                        <input type="date" id="date">
                 
-                <label for="time"></label>
-                <input type="time" id="time">
+                        <label for="time"></label>
+                        <input type="time" id="time">
+                    </div>
+                    <div class="bottom-formulary">
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Name">
 
-                <label for="name"></label>
-                <input type="text" id="name" placeholder="Name">
+                        <label for="phone"></label>
+                        <input type="text" id="phone" placeholder="Phone">
 
-                <label for="phone"></label>
-                <input type="text" id="phone" placeholder="Phone">
-
-                <label for="email"></label>
-                <input type="text" id="email" placeholder="Email">
-
-                <input type="submit" value="BOOK NOW">
+                        <label for="email"></label>
+                        <input type="text" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" id="submit" value="BOOK NOW">
+                </div>
+                
             </form>
         </div>
     </div>
