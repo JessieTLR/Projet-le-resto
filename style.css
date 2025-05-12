@@ -690,4 +690,63 @@ main .store-right {
 .event-container .display-container .event-right-background .event-right button:hover {
   color: rgb(172, 113, 37);
   transition: 0.4s;
+}
+
+.critical-container {
+  height: 850px;
+  margin-top: 100px;
+}
+.critical-container .critical-content {
+  max-width: 1280px;
+  background-color: rgb(240, 240, 240);
+  margin: 0 auto;
+  position: relative;
+}
+.critical-container .critical-content p {
+  font-family: "Roboto", sans-serif;
+  color: rgb(39, 38, 38);
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 90px 90px 40px 90px;
+  line-height: 40px;
+}
+.critical-container .critical-content h3 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(39, 38, 38);
+  font-size: 1.8rem;
+  font-weight: 350;
+  letter-spacing: 0.7px;
+  text-align: center;
+}
+.critical-container .critical-content h4 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(172, 113, 37);
+  font-size: 1.3rem;
+  font-weight: 350;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 90px;
+}
+.critical-container::before {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  background: url(./Style/components/Img/avatar02.jpg);
+  top: -10px;
+  z-index: 1000;
+}
+.critical-container::after {
+  content: "";
+  position: absolute;
+  height: 820px;
+  width: 100%;
+  left: 0;
+  background: url(./Style/components/Img/gmap.jpg);
+  background-position: center;
+  background-size: cover;
+  bottom: -10px;
 }/*# sourceMappingURL=style.css.map */
