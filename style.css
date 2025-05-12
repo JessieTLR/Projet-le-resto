@@ -412,6 +412,10 @@ main .store-right {
   letter-spacing: 0.3px;
   margin-bottom: 20px;
 }
+.reservation-container .informations form .formulary .bottom-formulary #name:focus {
+  font-family: "Roboto", sans-serif;
+  color: rgb(172, 113, 37);
+}
 .reservation-container .informations form .formulary .bottom-formulary #phone {
   width: 220px;
   height: 45px;
@@ -423,6 +427,10 @@ main .store-right {
   font-size: 1rem;
   letter-spacing: 0.3px;
   margin-bottom: 20px;
+}
+.reservation-container .informations form .formulary .bottom-formulary #phone:focus {
+  font-family: "Roboto", sans-serif;
+  color: rgb(172, 113, 37);
 }
 .reservation-container .informations form .formulary .bottom-formulary #email {
   width: 220px;
@@ -436,6 +444,10 @@ main .store-right {
   letter-spacing: 0.3px;
   margin-bottom: 20px;
 }
+.reservation-container .informations form .formulary .bottom-formulary #email:focus {
+  font-family: "Roboto", sans-serif;
+  color: rgb(172, 113, 37);
+}
 .reservation-container .informations form .submit #submit {
   background: rgb(39, 38, 38);
   color: rgb(240, 240, 240);
@@ -445,4 +457,10 @@ main .store-right {
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.8px;
+  cursor: pointer;
+}
+.reservation-container .informations form .submit #submit:hover {
+  color: rgb(172, 113, 37);
+  scale: 1.1;
+  transition: 0.8s;
 }/*# sourceMappingURL=style.css.map */

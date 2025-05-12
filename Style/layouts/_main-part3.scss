@@ -140,6 +140,11 @@
                         font-size: 1rem;
                         letter-spacing: 0.3px;
                         margin-bottom: 20px;
+
+                        &:focus {
+                            font-family: "Roboto", sans-serif;
+                            color:$color1;
+                        }
                     }
 
                     #phone {
@@ -153,6 +158,11 @@
                         font-size: 1rem;
                         letter-spacing: 0.3px;
                         margin-bottom: 20px;
+
+                        &:focus {
+                            font-family: "Roboto", sans-serif;
+                            color:$color1;
+                        }
                     }
 
                     #email {
@@ -166,6 +176,11 @@
                         font-size: 1rem;
                         letter-spacing: 0.3px;
                         margin-bottom: 20px;
+
+                        &:focus {
+                            font-family: "Roboto", sans-serif;
+                            color:$color1;
+                        }
                     }
                 }   
             }
@@ -180,6 +195,13 @@
                     font-family: "Roboto", sans-serif;
                     font-size:1.1rem;
                     letter-spacing: 0.8px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $color1;
+                        scale: 1.1;
+                        transition: 0.8s;
+                    }
                 }
             }
 
