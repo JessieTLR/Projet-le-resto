@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Allura";
   src: url(../Font/Allura/Allura-Regular.ttf);
@@ -467,6 +468,8 @@ main .store-right {
 
 .event-container {
   padding: 60px;
+  /*Encart d'introduction à la partie 4*/
+  /*container d'information à séparer en deux colonnes*/
 }
 .event-container .title-part4 {
   text-align: center;
@@ -491,53 +494,57 @@ main .store-right {
   grid-template-columns: 60% 40%;
   max-width: 1300px;
   margin: 0 auto;
+  /*container gauche*/
+  /*Contenair Event partie droite*/
 }
-.event-container .display-container .event {
+.event-container .display-container .event-left {
   display: grid;
   grid-template-rows: 1fr 1fr;
   min-height: 450px;
+  /*container gauche du haut*/
+  /*container gauche du bas*/
 }
-.event-container .display-container .event .event-left-top {
+.event-container .display-container .event-left .event-left-top {
   background: rgb(240, 240, 240);
   margin: 10px;
   display: grid;
   grid-template-columns: 35% 65%;
 }
-.event-container .display-container .event .event-left-top .left-part {
+.event-container .display-container .event-left .event-left-top .left-part {
   background: url(./Style/components/Img/event-01.jpg);
   background-position: center;
   background-size: cover;
-  width: 265px;
-  height: 265px;
+  width: 275px;
+  height: 275px;
 }
-.event-container .display-container .event .event-left-top .left-part .date-event {
+.event-container .display-container .event-left .event-left-top .left-part .date-event {
   background-color: rgb(39, 38, 38);
   padding: 20px;
   margin: 80px;
   text-align: center;
 }
-.event-container .display-container .event .event-left-top .left-part .date-event h5 {
+.event-container .display-container .event-left .event-left-top .left-part .date-event h5 {
   color: rgb(240, 240, 240);
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 500;
 }
-.event-container .display-container .event .event-left-top .left-part .date-event h6 {
+.event-container .display-container .event-left .event-left-top .left-part .date-event h6 {
   color: rgb(240, 240, 240);
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
 }
-.event-container .display-container .event .event-left-top .right-part {
+.event-container .display-container .event-left .event-left-top .right-part {
   padding: 40px;
 }
-.event-container .display-container .event .event-left-top .right-part h5 {
+.event-container .display-container .event-left .event-left-top .right-part h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.7rem;
   letter-spacing: 3px;
 }
-.event-container .display-container .event .event-left-top .right-part p {
+.event-container .display-container .event-left .event-left-top .right-part p {
   color: rgb(180, 180, 180);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
@@ -545,7 +552,7 @@ main .store-right {
   font-weight: 300;
   margin: 25px 0 25px 0;
 }
-.event-container .display-container .event .event-left-top .right-part button {
+.event-container .display-container .event-left .event-left-top .right-part button {
   border: 0px;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -555,51 +562,51 @@ main .store-right {
   margin: 20px 0 20px 0;
   cursor: pointer;
 }
-.event-container .display-container .event .event-left-top .right-part button:hover {
+.event-container .display-container .event-left .event-left-top .right-part button:hover {
   color: rgb(172, 113, 37);
   transition: 0.4s;
 }
-.event-container .display-container .event .event-left-bottom {
+.event-container .display-container .event-left .event-left-bottom {
   background: rgb(240, 240, 240);
   margin: 10px;
   display: grid;
   grid-template-columns: 35% 65%;
 }
-.event-container .display-container .event .event-left-bottom .left-part {
+.event-container .display-container .event-left .event-left-bottom .left-part {
   background: url(./Style/components/Img/event-02.jpg);
   background-position: center;
   background-size: cover;
-  width: 265px;
-  height: 265px;
+  width: 275px;
+  height: 275px;
 }
-.event-container .display-container .event .event-left-bottom .left-part .date-event {
+.event-container .display-container .event-left .event-left-bottom .left-part .date-event {
   background-color: rgb(39, 38, 38);
   padding: 20px;
   margin: 80px;
   text-align: center;
 }
-.event-container .display-container .event .event-left-bottom .left-part .date-event h5 {
+.event-container .display-container .event-left .event-left-bottom .left-part .date-event h5 {
   color: rgb(240, 240, 240);
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 500;
 }
-.event-container .display-container .event .event-left-bottom .left-part .date-event h6 {
+.event-container .display-container .event-left .event-left-bottom .left-part .date-event h6 {
   color: rgb(240, 240, 240);
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
 }
-.event-container .display-container .event .event-left-bottom .right-part {
+.event-container .display-container .event-left .event-left-bottom .right-part {
   padding: 40px;
 }
-.event-container .display-container .event .event-left-bottom .right-part h5 {
+.event-container .display-container .event-left .event-left-bottom .right-part h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.7rem;
   letter-spacing: 3px;
 }
-.event-container .display-container .event .event-left-bottom .right-part p {
+.event-container .display-container .event-left .event-left-bottom .right-part p {
   color: rgb(180, 180, 180);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
@@ -607,7 +614,7 @@ main .store-right {
   font-weight: 300;
   margin: 25px 0 25px 0;
 }
-.event-container .display-container .event .event-left-bottom .right-part button {
+.event-container .display-container .event-left .event-left-bottom .right-part button {
   border: 0px;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -617,7 +624,70 @@ main .store-right {
   margin: 20px 0 20px 0;
   cursor: pointer;
 }
-.event-container .display-container .event .event-left-bottom .right-part button:hover {
+.event-container .display-container .event-left .event-left-bottom .right-part button:hover {
+  color: rgb(172, 113, 37);
+  transition: 0.4s;
+}
+.event-container .display-container .event-right-background {
+  background: url(./Style/components/Img/event-03.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 10px;
+  max-height: 590px;
+}
+.event-container .display-container .event-right-background .event-right {
+  margin: 30px;
+  background-color: rgb(240, 240, 240);
+  min-height: 510px;
+  text-align: center;
+  padding: 0 30px 0 30px;
+}
+.event-container .display-container .event-right-background .event-right .date-event {
+  background-color: rgb(39, 38, 38);
+  padding: 20px;
+  text-align: center;
+  margin: 0 130px 0 130px;
+}
+.event-container .display-container .event-right-background .event-right .date-event h5 {
+  color: rgb(240, 240, 240);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.event-container .display-container .event-right-background .event-right .date-event h6 {
+  color: rgb(240, 240, 240);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.event-container .display-container .event-right-background .event-right h4 {
+  font-family: "Roboto", sans-serif;
+  text-transform: none;
+  color: rgb(39, 38, 38);
+  font-weight: 300;
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+  margin-top: 70px;
+}
+.event-container .display-container .event-right-background .event-right p {
+  color: rgb(180, 180, 180);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin: 25px 0 25px 0;
+}
+.event-container .display-container .event-right-background .event-right button {
+  border: 0px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: rgb(39, 38, 38);
+  letter-spacing: 2px;
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+}
+.event-container .display-container .event-right-background .event-right button:hover {
   color: rgb(172, 113, 37);
   transition: 0.4s;
 }/*# sourceMappingURL=style.css.map */

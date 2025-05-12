@@ -1,9 +1,10 @@
 .event-container {
     padding: 60px;
 
+    /*Encart d'introduction à la partie 4*/
     .title-part4{
         text-align: center;
-        
+
         h3 {
             margin-top: 60px;
             font-size: 3.5rem;
@@ -24,18 +25,20 @@
         }
     }
     
-
+/*container d'information à séparer en deux colonnes*/
     .display-container {
         display: grid;
         grid-template-columns: 60% 40%;
         max-width: 1300px;
         margin: 0 auto;
 
-        .event {
+        /*container gauche*/
+        .event-left {
             display: grid;
             grid-template-rows: 1fr 1fr;
             min-height: 450px;
 
+            /*container gauche du haut*/
             .event-left-top {
                 background: $colorwhite;
                 margin: 10px;
@@ -46,8 +49,8 @@
                     background: url(./Style/components/Img/event-01.jpg);
                     background-position: center;
                     background-size: cover;
-                    width: 265px;
-                    height: 265px;
+                    width: 275px;
+                    height: 275px;
 
                     .date-event{
                         background-color: $colorblack;
@@ -108,7 +111,7 @@
                    }
                 }
             }
-
+        /*container gauche du bas*/
         .event-left-bottom {
             background: $colorwhite;
             margin: 10px;
@@ -119,8 +122,8 @@
                     background: url(./Style/components/Img/event-02.jpg);
                     background-position: center;
                     background-size: cover;
-                    width: 265px;
-                    height: 265px;
+                    width: 275px;
+                    height: 275px;
 
                     .date-event{
                         background-color: $colorblack;
@@ -180,7 +183,80 @@
                         }
                     }
                 }
-            
+            }
+        }
+
+        /*Contenair Event partie droite*/
+        .event-right-background {
+            background: url(./Style/components/Img/event-03.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: 10px;
+            max-height: 590px;
+
+            .event-right{
+                margin: 30px;
+                background-color: $colorwhite;
+                min-height: 510px;
+                text-align: center;
+                padding: 0 30px 0 30px;
+
+                .date-event{
+                    background-color: $colorblack;
+                    padding: 20px;
+                    text-align: center;
+                    margin: 0 130px 0 130px;
+    
+                    h5 { 
+                        color: $colorwhite;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 2rem;
+                        font-weight:500;
+                    }
+    
+                    h6 {
+                        color: $colorwhite;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 1.5rem;
+                        font-weight:400;
+                    }
+                }
+
+                h4{
+                    font-family: "Roboto", sans-serif;
+                    text-transform:none;
+                    color: $colorblack;
+                    font-weight:300;
+                    font-size: 1.7rem;
+                    letter-spacing: 3px;
+                    margin-top: 70px;
+                   }
+
+                   p{
+                    color: $color2;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 1rem;
+                    letter-spacing: 2px;
+                    font-weight: 300;
+                    margin: 25px 0 25px 0;
+
+                   }
+
+                   button{
+                    border: 0px;
+                    font-family: "Roboto", sans-serif;
+                    text-transform: uppercase;
+                    font-size: 1.1rem;
+                    color: $colorblack;
+                    letter-spacing: 2px;
+                    margin: 20px 0 20px 0;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $color1;
+                        transition: 0.4s;
+                       }
+                   }
             }
         }
     }
