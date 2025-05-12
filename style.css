@@ -466,20 +466,23 @@ main .store-right {
 }
 
 .event-container {
-  text-align: center;
   padding: 60px;
 }
-.event-container h3 {
+.event-container .title-part4 {
+  text-align: center;
+}
+.event-container .title-part4 h3 {
+  margin-top: 60px;
   font-size: 3.5rem;
   Height: 60px;
 }
-.event-container h4 {
+.event-container .title-part4 h4 {
   color: rgb(240, 240, 240);
   text-transform: uppercase;
   font-size: 2.8rem;
   letter-spacing: 2px;
 }
-.event-container img {
+.event-container .title-part4 img {
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -498,7 +501,7 @@ main .store-right {
   background: rgb(240, 240, 240);
   margin: 10px;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 35% 65%;
 }
 .event-container .display-container .event .event-left-top .left-part {
   background: url(./Style/components/Img/event-01.jpg);
@@ -509,16 +512,112 @@ main .store-right {
 }
 .event-container .display-container .event .event-left-top .left-part .date-event {
   background-color: rgb(39, 38, 38);
-  padding: 40px;
+  padding: 20px;
+  margin: 80px;
+  text-align: center;
 }
 .event-container .display-container .event .event-left-top .left-part .date-event h5 {
   color: rgb(240, 240, 240);
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 .event-container .display-container .event .event-left-top .left-part .date-event h6 {
   color: rgb(240, 240, 240);
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
+  font-weight: 400;
+}
+.event-container .display-container .event .event-left-top .right-part {
+  padding: 40px;
+}
+.event-container .display-container .event .event-left-top .right-part h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+}
+.event-container .display-container .event .event-left-top .right-part p {
+  color: rgb(180, 180, 180);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin: 25px 0 25px 0;
+}
+.event-container .display-container .event .event-left-top .right-part button {
+  border: 0px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: rgb(39, 38, 38);
+  letter-spacing: 2px;
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+}
+.event-container .display-container .event .event-left-top .right-part button:hover {
+  color: rgb(172, 113, 37);
+  transition: 0.4s;
+}
+.event-container .display-container .event .event-left-bottom {
+  background: rgb(240, 240, 240);
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+.event-container .display-container .event .event-left-bottom .left-part {
+  background: url(./Style/components/Img/event-02.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 265px;
+  height: 265px;
+}
+.event-container .display-container .event .event-left-bottom .left-part .date-event {
+  background-color: rgb(39, 38, 38);
+  padding: 20px;
+  margin: 80px;
+  text-align: center;
+}
+.event-container .display-container .event .event-left-bottom .left-part .date-event h5 {
+  color: rgb(240, 240, 240);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.event-container .display-container .event .event-left-bottom .left-part .date-event h6 {
+  color: rgb(240, 240, 240);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.event-container .display-container .event .event-left-bottom .right-part {
+  padding: 40px;
+}
+.event-container .display-container .event .event-left-bottom .right-part h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+}
+.event-container .display-container .event .event-left-bottom .right-part p {
+  color: rgb(180, 180, 180);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin: 25px 0 25px 0;
+}
+.event-container .display-container .event .event-left-bottom .right-part button {
+  border: 0px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: rgb(39, 38, 38);
+  letter-spacing: 2px;
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+}
+.event-container .display-container .event .event-left-bottom .right-part button:hover {
+  color: rgb(172, 113, 37);
+  transition: 0.4s;
 }/*# sourceMappingURL=style.css.map */

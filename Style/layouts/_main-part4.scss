@@ -1,24 +1,29 @@
 .event-container {
-    text-align: center;
     padding: 60px;
 
-    h3 {
-        font-size: 3.5rem;
-        Height: 60px;
+    .title-part4{
+        text-align: center;
+        
+        h3 {
+            margin-top: 60px;
+            font-size: 3.5rem;
+            Height: 60px;
+        }
+    
+    
+        h4 {
+            color: $colorwhite;
+            text-transform: uppercase;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+        }  
+    
+        img{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
     }
-
-
-    h4 {
-        color: $colorwhite;
-        text-transform: uppercase;
-        font-size: 2.8rem;
-        letter-spacing: 2px;
-    }  
-
-    img{
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
+    
 
     .display-container {
         display: grid;
@@ -35,7 +40,7 @@
                 background: $colorwhite;
                 margin: 10px;
                 display: grid;
-                grid-template-columns: 40% 60%;
+                grid-template-columns: 35% 65%;
 
                 .left-part {
                     background: url(./Style/components/Img/event-01.jpg);
@@ -46,26 +51,137 @@
 
                     .date-event{
                         background-color: $colorblack;
-                        padding: 40px;
+                        padding: 20px;
+                        margin: 80px;
+                        text-align: center;
 
                         h5 { 
                             color: $colorwhite;
                             font-family: "Roboto", sans-serif;
                             font-size: 2rem;
-                            font-weight:bold;
+                            font-weight:500;
                         }
 
                         h6 {
                             color: $colorwhite;
                             font-family: "Roboto", sans-serif;
                             font-size: 1.5rem;
+                            font-weight:400;
                         }
-                    }
+                    } 
+                }
 
-                    
+                .right-part {
+                   padding: 40px; 
+
+                   h5{
+                    font-family: "Roboto", sans-serif;
+                    font-weight:300;
+                    font-size: 1.7rem;
+                    letter-spacing: 3px;
+                   }
+
+                   p{
+                    color: $color2;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 1.1rem;
+                    letter-spacing: 2px;
+                    font-weight: 300;
+                    margin: 25px 0 25px 0;
+
+                   }
+
+                   button{
+                    border: 0px;
+                    font-family: "Roboto", sans-serif;
+                    text-transform: uppercase;
+                    font-size: 1.1rem;
+                    color: $colorblack;
+                    letter-spacing: 2px;
+                    margin: 20px 0 20px 0;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $color1;
+                        transition: 0.4s;
+                    }
+                   }
                 }
             }
-    
+
+        .event-left-bottom {
+            background: $colorwhite;
+            margin: 10px;
+            display: grid;
+            grid-template-columns: 35% 65%;
+
+                .left-part {
+                    background: url(./Style/components/Img/event-02.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    width: 265px;
+                    height: 265px;
+
+                    .date-event{
+                        background-color: $colorblack;
+                        padding: 20px;
+                        margin: 80px;
+                        text-align: center;
+
+                        h5 { 
+                            color: $colorwhite;
+                            font-family: "Roboto", sans-serif;
+                            font-size: 2rem;
+                            font-weight:500;
+                        }
+
+                        h6 {
+                            color: $colorwhite;
+                            font-family: "Roboto", sans-serif;
+                            font-size: 1.5rem;
+                            font-weight:400;
+                        }
+                    }
+                }
+
+                .right-part {
+                    padding: 40px; 
+ 
+                    h5{
+                     font-family: "Roboto", sans-serif;
+                     font-weight:300;
+                     font-size: 1.7rem;
+                     letter-spacing: 3px;
+                    }
+ 
+                    p{
+                     color: $color2;
+                     font-family: "Roboto", sans-serif;
+                     font-size: 1.1rem;
+                     letter-spacing: 2px;
+                     font-weight: 300;
+                     margin: 25px 0 25px 0;
+ 
+                    }
+ 
+                    button{
+                     border: 0px;
+                     font-family: "Roboto", sans-serif;
+                     text-transform: uppercase;
+                     font-size: 1.1rem;
+                     color: $colorblack;
+                     letter-spacing: 2px;
+                     margin: 20px 0 20px 0;
+                     cursor: pointer;
+ 
+                     &:hover {
+                         color: $color1;
+                         transition: 0.4s;
+                        }
+                    }
+                }
+            
+            }
         }
     }
 
