@@ -1,0 +1,72 @@
+.event-container {
+    text-align: center;
+    padding: 60px;
+
+    h3 {
+        font-size: 3.5rem;
+        Height: 60px;
+    }
+
+
+    h4 {
+        color: $colorwhite;
+        text-transform: uppercase;
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+    }  
+
+    img{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .display-container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        max-width: 1300px;
+        margin: 0 auto;
+
+        .event {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            min-height: 450px;
+
+            .event-left-top {
+                background: $colorwhite;
+                margin: 10px;
+                display: grid;
+                grid-template-columns: 40% 60%;
+
+                .left-part {
+                    background: url(./Style/components/Img/event-01.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    width: 265px;
+                    height: 265px;
+
+                    .date-event{
+                        background-color: $colorblack;
+                        padding: 40px;
+
+                        h5 { 
+                            color: $colorwhite;
+                            font-family: "Roboto", sans-serif;
+                            font-size: 2rem;
+                            font-weight:bold;
+                        }
+
+                        h6 {
+                            color: $colorwhite;
+                            font-family: "Roboto", sans-serif;
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    
+                }
+            }
+    
+        }
+    }
+
+}

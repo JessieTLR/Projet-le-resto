@@ -463,4 +463,62 @@ main .store-right {
   color: rgb(172, 113, 37);
   scale: 1.1;
   transition: 0.8s;
+}
+
+.event-container {
+  text-align: center;
+  padding: 60px;
+}
+.event-container h3 {
+  font-size: 3.5rem;
+  Height: 60px;
+}
+.event-container h4 {
+  color: rgb(240, 240, 240);
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
+.event-container img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.event-container .display-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.event-container .display-container .event {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  min-height: 450px;
+}
+.event-container .display-container .event .event-left-top {
+  background: rgb(240, 240, 240);
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.event-container .display-container .event .event-left-top .left-part {
+  background: url(./Style/components/Img/event-01.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 265px;
+  height: 265px;
+}
+.event-container .display-container .event .event-left-top .left-part .date-event {
+  background-color: rgb(39, 38, 38);
+  padding: 40px;
+}
+.event-container .display-container .event .event-left-top .left-part .date-event h5 {
+  color: rgb(240, 240, 240);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.event-container .display-container .event .event-left-top .left-part .date-event h6 {
+  color: rgb(240, 240, 240);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
