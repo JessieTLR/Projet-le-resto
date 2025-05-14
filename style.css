@@ -765,14 +765,42 @@ footer {
   background-image: url(./Style/components/Img/bg-footer.jpg);
   background-position: center;
   background-size: cover;
+}
+footer .footer-container {
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
 }
-footer .footer-left {
-  max-width: 550px;
-  margin-left: 300px;
+footer .footer-container .footer-left {
+  padding: 90px 40px 90px 40px;
 }
-footer .footer-left h3 {
-  font-size: 2.7rem;
+footer .footer-container .footer-left h3 {
+  font-size: 3.2rem;
+}
+footer .footer-container .footer-left p {
+  font-family: "Roboto", sans-serif;
+  color: rgb(180, 180, 180);
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 40px;
+}
+footer .footer-container .footer-right {
+  padding: 90px 40px 90px 80px;
+}
+footer .footer-container .footer-right .newsletter h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 450;
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+footer .footer-container .footer-right .newsletter input {
+  background: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid rgba(128, 128, 128, 0.164);
+  color: rgb(180, 180, 180);
+  width: 350px;
+  margin-bottom: 60px;
 }/*# sourceMappingURL=style.css.map */
