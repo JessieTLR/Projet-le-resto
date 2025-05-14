@@ -290,7 +290,7 @@ main .store-right {
   display: grid;
   grid-template-columns: 30% 70%;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 150px;
 }
 .reservation-container .openner {
   background: black;
@@ -693,14 +693,27 @@ main .store-right {
 }
 
 .critical-container {
-  height: 850px;
-  margin-top: 100px;
+  height: 870px;
+  padding: 100px 0 70px 0;
+  position: relative;
+}
+.critical-container::after {
+  content: "";
+  position: absolute;
+  height: 480px;
+  width: 100%;
+  left: 0;
+  background: url(./Style/components/Img/gmap.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: -2;
+  bottom: 0px;
 }
 .critical-container .critical-content {
   max-width: 1280px;
   background-color: rgb(240, 240, 240);
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
 }
 .critical-container .critical-content p {
   font-family: "Roboto", sans-serif;
@@ -711,6 +724,7 @@ main .store-right {
   text-align: center;
   padding: 90px 90px 40px 90px;
   line-height: 40px;
+  background-color: rgb(240, 240, 240);
 }
 .critical-container .critical-content h3 {
   font-family: "Roboto", sans-serif;
@@ -719,6 +733,7 @@ main .store-right {
   font-weight: 350;
   letter-spacing: 0.7px;
   text-align: center;
+  background-color: rgb(240, 240, 240);
 }
 .critical-container .critical-content h4 {
   font-family: "Roboto", sans-serif;
@@ -727,26 +742,37 @@ main .store-right {
   font-weight: 350;
   letter-spacing: 0.5px;
   text-align: center;
-  margin-top: 20px;
+  padding-top: 20px;
   padding-bottom: 90px;
+  background-color: rgb(240, 240, 240);
 }
 .critical-container::before {
   content: "";
   position: absolute;
-  height: 35px;
-  width: 35px;
-  background: url(./Style/components/Img/avatar02.jpg);
-  top: -10px;
-  z-index: 1000;
-}
-.critical-container::after {
-  content: "";
-  position: absolute;
-  height: 820px;
-  width: 100%;
-  left: 0;
-  background: url(./Style/components/Img/gmap.jpg);
+  background-image: url(./Style/components/Img/avatar-02.jpg);
   background-position: center;
   background-size: cover;
-  bottom: -10px;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 55px;
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 150px;
+}
+
+footer {
+  background-image: url(./Style/components/Img/bg-footer.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .footer-left {
+  max-width: 550px;
+  margin-left: 300px;
+}
+footer .footer-left h3 {
+  font-size: 2.7rem;
 }/*# sourceMappingURL=style.css.map */

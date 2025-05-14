@@ -1,12 +1,27 @@
 .critical-container {
-    height: 850px;
-    margin-top: 100px;
+    height: 870px;
+    padding: 100px 0 70px 0;
+    position:relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        height: 480px;
+        width: 100%;
+        left:0;
+        background: url(./Style/components/Img/gmap.jpg);
+        background-position:center;
+        background-size: cover;
+        z-index: -2;
+        bottom: 0px;
+    }
 
     .critical-content {
         max-width: 1280px;
         background-color: $colorwhite;
+        position: relative;
         margin: 0 auto;
-        position:relative;
+    
 
         p{
             font-family:"Roboto",sans-serif;
@@ -17,6 +32,7 @@
             text-align: center;
             padding: 90px 90px 40px 90px;
             line-height: 40px;
+            background-color: $colorwhite;
         }
 
         h3 {
@@ -26,6 +42,7 @@
             font-weight: 350;
             letter-spacing: 0.7px;
             text-align: center;
+            background-color: $colorwhite;
         }
 
         h4 {
@@ -35,31 +52,25 @@
             font-weight: 350;
             letter-spacing: 0.5px;
             text-align: center;
-            margin-top: 20px;
+            padding-top: 20px;
             padding-bottom: 90px;
+            background-color: $colorwhite;
         }
-    }
+    }    
 
     &::before {
-        content: "";
+        content:"";
         position: absolute;
-        height: 35px;
-        width: 35px;
-        background: url(./Style/components/Img/avatar02.jpg);
-        top: -10px;
-        z-index: 1000;
-    }
-
-    &::after{
-        content: "";
-        position: absolute;
-        height: 820px;
-        width: 100%;
-        left:0;
-        background: url(./Style/components/Img/gmap.jpg);
-        background-position:center;
+        background-image: url(./Style/components/Img/avatar-02.jpg);
+        background-position: center;
         background-size: cover;
-        bottom: -10px;
+        height: 80px;
+        width: 80px;
+        left: 50%;
+        top: 55px;
+        transform: translateX(-50%);
+        z-index: 1;
+        border-radius: 150px;
     }
 
 }

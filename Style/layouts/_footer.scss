@@ -1,0 +1,16 @@
+footer {
+    background-image: url(./Style/components/Img/bg-footer.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .footer-left {
+        max-width: 550px;
+        margin-left: 300px;
+        h3 {
+            font-size: 2.7rem;
+        }
+    }
+}
