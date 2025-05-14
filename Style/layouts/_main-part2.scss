@@ -2,6 +2,10 @@
     position: relative;
     height: 1200px;
 
+    @media screen and (max-width:955px){
+        min-height: 2000px;
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -63,11 +67,18 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 1000;
+        min-height: 804px;
         
 
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        @media screen and (max-width:955px) {
+            display: block;
+            min-width: 600px;
+    
+        }
 
         .plate-container {
             display: grid;

@@ -51,11 +51,19 @@ footer {
                 display: grid;
                 grid-template-columns: 30% 70%;
 
+                @media screen and (max-width:1091px) {
+                    display: block;
+                }
+
                 h4 {
                     text-align:  left;
                     font-family: "Roboto", sans-serif;
                     font-weight: 450;
                     font-size: 1.3rem;
+
+                    @media screen and (max-width:1091px) {
+                        padding-bottom: 30px;
+                    }
                 }
 
                 ul {

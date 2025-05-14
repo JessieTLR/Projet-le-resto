@@ -127,9 +127,14 @@ header .header-content p {
 main .store {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-height: 70vh;
   min-height: 530px;
   background: rgb(240, 240, 240);
+}
+@media screen and (max-width: 955px) {
+  main .store {
+    display: block;
+    padding: 15px;
+  }
 }
 main .store .store-left {
   background: rgb(240, 240, 240);
@@ -138,8 +143,8 @@ main .store .store-left {
   margin: 15px;
 }
 main .store .store-left h3 {
-  margin-top: 35px;
-  height: 40px;
+  padding-top: 35px;
+  line-height: 40px;
 }
 main .store .store-left h4 {
   color: rgb(39, 38, 38);
@@ -182,6 +187,7 @@ main .store .store-left h6 {
   color: rgb(180, 180, 180);
   text-transform: uppercase;
   font-weight: 450;
+  padding: 10px;
 }
 main .store-right {
   background: url(./Style/components/Img/store-01.jpg);
@@ -192,6 +198,11 @@ main .store-right {
 .menu-container {
   position: relative;
   height: 1200px;
+}
+@media screen and (max-width: 955px) {
+  .menu-container {
+    min-height: 2000px;
+  }
 }
 .menu-container::after {
   content: "";
@@ -249,9 +260,16 @@ main .store-right {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
+  min-height: 804px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 955px) {
+  .menu-container .menu {
+    display: block;
+    min-width: 600px;
+  }
 }
 .menu-container .menu .plate-container {
   display: grid;
@@ -286,11 +304,16 @@ main .store-right {
 }
 
 .reservation-container {
-  width: 1340px;
+  max-width: 1340px;
   display: grid;
   grid-template-columns: 30% 70%;
   margin: 0 auto;
   margin-top: 150px;
+}
+@media screen and (max-width: 1179px) {
+  .reservation-container {
+    display: block;
+  }
 }
 .reservation-container .openner {
   background: black;
@@ -338,11 +361,12 @@ main .store-right {
 .reservation-container .informations {
   background: rgb(240, 240, 240);
   text-align: center;
+  min-height: 590px;
 }
 .reservation-container .informations h3 {
-  height: 45px;
   font-size: 3rem;
-  margin-top: 80px;
+  padding-top: 80px;
+  line-height: 30px;
 }
 .reservation-container .informations h4 {
   color: rgb(39, 38, 38);
@@ -394,6 +418,11 @@ main .store-right {
   font-size: 1rem;
   letter-spacing: 0.3px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 881px) {
+  .reservation-container .informations form .formulary .top-formulary {
+    display: block;
+  }
 }
 .reservation-container .informations form .formulary .bottom-formulary {
   display: flex;
@@ -497,6 +526,11 @@ main .store-right {
   /*container gauche*/
   /*Contenair Event partie droite*/
 }
+@media screen and (max-width: 1336px) {
+  .event-container .display-container {
+    display: block;
+  }
+}
 .event-container .display-container .event-left {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -514,7 +548,7 @@ main .store-right {
   background: url(./Style/components/Img/event-01.jpg);
   background-position: center;
   background-size: cover;
-  width: 275px;
+  max-width: 275px;
   height: 275px;
 }
 .event-container .display-container .event-left .event-left-top .left-part .date-event {
@@ -576,7 +610,7 @@ main .store-right {
   background: url(./Style/components/Img/event-02.jpg);
   background-position: center;
   background-size: cover;
-  width: 275px;
+  max-width: 275px;
   height: 275px;
 }
 .event-container .display-container .event-left .event-left-bottom .left-part .date-event {
@@ -642,11 +676,18 @@ main .store-right {
   text-align: center;
   padding: 0 30px 0 30px;
 }
+@media screen and (max-width: 1336px) {
+  .event-container .display-container .event-right-background .event-right {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
 .event-container .display-container .event-right-background .event-right .date-event {
   background-color: rgb(39, 38, 38);
   padding: 20px;
   text-align: center;
-  margin: 0 130px 0 130px;
+  width: 100px;
+  margin: 0 auto;
 }
 .event-container .display-container .event-right-background .event-right .date-event h5 {
   color: rgb(240, 240, 240);
@@ -808,11 +849,21 @@ footer .footer-container .footer-right .social {
   display: grid;
   grid-template-columns: 30% 70%;
 }
+@media screen and (max-width: 1091px) {
+  footer .footer-container .footer-right .social {
+    display: block;
+  }
+}
 footer .footer-container .footer-right .social h4 {
   text-align: left;
   font-family: "Roboto", sans-serif;
   font-weight: 450;
   font-size: 1.3rem;
+}
+@media screen and (max-width: 1091px) {
+  footer .footer-container .footer-right .social h4 {
+    padding-bottom: 30px;
+  }
 }
 footer .footer-container .footer-right .social ul {
   display: flex;

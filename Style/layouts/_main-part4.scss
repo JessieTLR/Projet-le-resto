@@ -1,6 +1,8 @@
 .event-container {
     padding: 60px;
 
+   
+
     /*Encart d'introduction à la partie 4*/
     .title-part4{
         text-align: center;
@@ -32,6 +34,10 @@
         max-width: 1300px;
         margin: 0 auto;
 
+        @media screen and (max-width:1336px){
+            display: block;
+        }
+
         /*container gauche*/
         .event-left {
             display: grid;
@@ -49,7 +55,7 @@
                     background: url(./Style/components/Img/event-01.jpg);
                     background-position: center;
                     background-size: cover;
-                    width: 275px;
+                    max-width: 275px;
                     height: 275px;
 
                     .date-event{
@@ -122,7 +128,7 @@
                     background: url(./Style/components/Img/event-02.jpg);
                     background-position: center;
                     background-size: cover;
-                    width: 275px;
+                    max-width: 275px;
                     height: 275px;
 
                     .date-event{
@@ -201,11 +207,17 @@
                 text-align: center;
                 padding: 0 30px 0 30px;
 
+                @media screen and (max-width:1336px){
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
+
                 .date-event{
                     background-color: $colorblack;
                     padding: 20px;
                     text-align: center;
-                    margin: 0 130px 0 130px;
+                    width: 100px;
+                    margin: 0 auto;
     
                     h5 { 
                         color: $colorwhite;

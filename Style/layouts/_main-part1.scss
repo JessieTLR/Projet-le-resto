@@ -2,9 +2,13 @@ main {
     .store {
         display: grid;
         grid-template-columns: 1fr 1fr ;
-        max-height:70vh;
         min-height: 530px;
         background: $colorwhite;
+
+        @media screen and (max-width:955px) {
+            display: block;
+            padding:15px;
+        }
 
         .store-left {
             background: $colorwhite;
@@ -13,8 +17,8 @@ main {
             margin: 15px;
 
             h3{
-                margin-top: 35px;
-                height: 40px;
+                padding-top: 35px;
+                line-height: 40px;
             }
 
             h4 {
@@ -63,6 +67,7 @@ main {
                 color: $color2;
                 text-transform: uppercase;
                 font-weight: 450;
+                padding: 10px;
             }
 
             }
