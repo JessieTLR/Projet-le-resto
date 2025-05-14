@@ -3,7 +3,9 @@ footer {
     background-position: center;
     background-size: cover;
 
-    
+    @media screen and (max-width: 841px) {
+        background-image: none;
+    }
 
     .footer-container {
         text-align: left;
@@ -11,6 +13,12 @@ footer {
         grid-template-columns: 1fr 1fr;
         max-width: 1400px;
         margin: 0 auto;
+
+        @media screen and (max-width: 841px){
+            height: 450px;
+            width:100%;
+            background: $colorblack;
+        }
 
         .footer-left {
             padding: 90px 40px 90px 40px;
@@ -24,6 +32,10 @@ footer {
                 font-weight:300;
                 font-size: 1.3rem;
                 line-height: 40px;
+            }
+
+            @media screen and (max-width: 841px){
+                display: none;
             }
         }
 

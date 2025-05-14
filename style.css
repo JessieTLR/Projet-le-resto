@@ -833,6 +833,12 @@ main .store-right {
     bottom: -200px;
   }
 }
+@media screen and (max-width: 540px) {
+  .critical-container::after {
+    bottom: -300px;
+    height: 750px;
+  }
+}
 .critical-container .critical-content {
   max-width: 1280px;
   width: 90%;
@@ -891,12 +897,24 @@ footer {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 841px) {
+  footer {
+    background-image: none;
+  }
+}
 footer .footer-container {
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1400px;
   margin: 0 auto;
+}
+@media screen and (max-width: 841px) {
+  footer .footer-container {
+    height: 450px;
+    width: 100%;
+    background: rgb(39, 38, 38);
+  }
 }
 footer .footer-container .footer-left {
   padding: 90px 40px 90px 40px;
@@ -910,6 +928,11 @@ footer .footer-container .footer-left p {
   font-weight: 300;
   font-size: 1.3rem;
   line-height: 40px;
+}
+@media screen and (max-width: 841px) {
+  footer .footer-container .footer-left {
+    display: none;
+  }
 }
 footer .footer-container .footer-right {
   padding: 90px 40px 90px 80px;

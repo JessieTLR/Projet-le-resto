@@ -40,6 +40,11 @@
         @media screen and (max-width:680px){
             bottom: -200px;
         }
+
+        @media screen and (max-width:540px){
+            bottom: -300px;
+            height: 750px;
+        }
     }
 
     .critical-content {
