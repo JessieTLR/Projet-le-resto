@@ -79,6 +79,7 @@ nav .navigation ul li {
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: lighter;
+  cursor: pointer;
 }
 nav .navigation ul li:hover {
   color: rgb(172, 113, 37);
@@ -313,6 +314,8 @@ main .store-right {
 }
 .menu-container .menu .plate-container .img-plate img {
   margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
   min-width: 100px;
   min-height: 100px;
   border-radius: 150px;
@@ -422,7 +425,7 @@ main .store-right {
 @media screen and (max-width: 881px) {
   .reservation-container .informations form .formulary .top-formulary {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 .reservation-container .informations form .formulary .top-formulary #number {
@@ -467,7 +470,7 @@ main .store-right {
 @media screen and (max-width: 881px) {
   .reservation-container .informations form .formulary .bottom-formulary {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 .reservation-container .informations form .formulary .bottom-formulary #name {

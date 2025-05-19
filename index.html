@@ -230,7 +230,6 @@
             <form action="#">
                 <div class="formulary">
                     <div class="top-formulary">
-                        <label for="number"></label> 
                         <select name="people" id="number">
                             <option valeur="People">People</option>
                             <option value="1">1</option>
@@ -243,20 +242,15 @@
                             <option value="8">8</option>
                         </select>
 
-                        <label for="date"></label>
-                        <input type="date" id="date">
+                        <input type="date" id="date" name="date" value="2025-05-19" min="2025-05-19" max="2035-05-19">
                 
-                        <label for="time"></label>
-                        <input type="time" id="time">
+                        <input type="time" id="time" name="time" min="07:00" max="21:00">
                     </div>
                     <div class="bottom-formulary">
-                        <label for="name"></label>
                         <input type="text" id="name" placeholder="Name">
 
-                        <label for="phone"></label>
                         <input type="text" id="phone" placeholder="Phone">
 
-                        <label for="email"></label>
                         <input type="text" id="email" placeholder="Email">
                     </div>
                 </div>
